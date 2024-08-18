@@ -35,9 +35,9 @@ function App() {
       </div>
 
       <center>
-      <p className="mt-2 text-md sm:text-2xl font-light bg-gradient-to-r text-gray-900 font-dancing-script">
-  @Zuhair_Khan
-</p>
+        <p className="mt-2 text-md sm:text-2xl font-light bg-gradient-to-r text-gray-900 font-dancing-script">
+          @Zuhair_Khan
+        </p>
 
 
 
@@ -66,14 +66,14 @@ function App() {
           rel="noopener noreferrer"
           className="flex items-center justify-center mt-8 text-gray-800 hover:text-gray-500 transition-colors duration-200"
         >
-          <PiLinktreeLogoBold  className="text-4xl mr-2 mt-4 mb-4" />
+          <PiLinktreeLogoBold className="text-4xl mr-2 mt-4 mb-4" />
           <h1 className="text-2xl font-semibold">NexusLink</h1>
         </a>
 
-  
+
         <hr className="w-3/4 border-gray-300 mt-4" />
 
-  
+
         <p className="text-sm text-gray-600 mt-3 mb-3">
           Built and designed by Zuhair Khan
         </p>
