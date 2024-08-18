@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="relative mt-10 px-4 sm:px-6 md:px-8 lg:px-10">
+    <div className="relative mt-10 px-4 sm:px-6 md:px-8 lg:px-10 ">
       <div className="relative flex items-center justify-center">
         <img
           className="w-[90px] h-[90px] rounded-full border-2 border-gray-500"
@@ -35,11 +35,15 @@ function App() {
       </div>
 
       <center>
-        <p className="mt-2 text-md sm:text-2xl font-semibold bg-gradient-to-r text-gray-900">
-          @Zuhair_Khan
-        </p>
+      <p className="mt-2 text-md sm:text-2xl font-light bg-gradient-to-r text-gray-900 font-dancing-script">
+  @Zuhair_Khan
+</p>
 
-        <div className="flex items-center justify-center mt-5 gap-2 sm:gap-3 text-lg sm:text-2xl font-semibold tracking-wide">
+
+
+
+
+        <div className="flex items-center justify-center mt-5 gap-2 sm:gap-3 text-lg sm:text-2xl  tracking-wide">
           <h1>Web Dev</h1>
           <h1>▪ Programmer</h1>
           <h1>▪ Web3</h1>

@@ -1,33 +1,33 @@
-import { LuLinkedin } from "react-icons/lu";
-import { FiGithub } from "react-icons/fi";
-import { MdMailOutline } from "react-icons/md";
-import { SiLeetcode } from "react-icons/si";
+import { FiLinkedin } from "react-icons/fi";
+import { VscGithubAlt } from "react-icons/vsc";
+import { CiMail } from "react-icons/ci";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { SiCodingninjas } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
-import { RiTwitterLine } from "react-icons/ri";
+import { SlSocialTwitter } from "react-icons/sl";
 
 const links = [
-  { href: "https://www.linkedin.com/in/zuhair-khan-55b9a624a/", icon: LuLinkedin, color: "text-blue-600", hoverColor: "text-blue-800" },
-  { href: "https://github.com/beingzuhairkhan", icon: FiGithub, color: "text-black", hoverColor: "text-gray-800" },
-  { href: "mailto:zuhair-khan@example.com", icon: MdMailOutline, color: "text-red-600", hoverColor: "text-red-800" },
-  { href: "https://leetcode.com/u/beingzuhairkhan/", icon: SiLeetcode, color: "text-yellow-600", hoverColor: "text-yellow-800" },
-  { href: "https://www.naukri.com/code360/profile/beingzuhairkhan", icon: SiCodingninjas, color: "text-orange-600", hoverColor: "text-orange-800" },
-  { href: "https://www.geeksforgeeks.org/user/beingzuhairkhan/", icon: SiGeeksforgeeks, color: "text-green-600", hoverColor: "text-green-800" },
-  { href: "https://twitter.com/zuhair-khan", icon: RiTwitterLine, color: "text-blue-500", hoverColor: "text-blue-700" },
+  { href: "https://www.linkedin.com/in/zuhair-khan-55b9a624a/", icon: FiLinkedin, hoverBgColor: "hover:bg-gray-400 " },
+  { href: "https://github.com/beingzuhairkhan", icon: VscGithubAlt, hoverBgColor: "hover:bg-gray-400" },
+  { href: "mailto:zuhairkhan5134@gmail.com", icon: CiMail, hoverBgColor: "hover:bg-gray-400" },
+  { href: "https://leetcode.com/u/beingzuhairkhan/", icon: TbBrandLeetcode, hoverBgColor: "hover:bg-gray-400" },
+  { href: "https://www.naukri.com/code360/profile/beingzuhairkhan", icon: SiCodingninjas, hoverBgColor: "hover:bg-gray-400" },
+  { href: "https://www.geeksforgeeks.org/user/beingzuhairkhan/", icon: SiGeeksforgeeks,  hoverBgColor: "hover:bg-gray-400" },
+  { href: "https://twitter.com/zuhair-khan", icon: SlSocialTwitter,  hoverBgColor: "hover:bg-gray-400" },
 ];
 
 const Link = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6 mt-5 lg:gap-12">
+    <div className="flex justify-center gap-4 mt-5 lg:gap-8">
       {links.map((link, index) => (
         <a
           key={index}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex items-center justify-center ${link.color} hover:${link.hoverColor} hover:scale-125 hover:rotate-12 hover:shadow-lg transition-transform duration-300 ease-in-out`}
+          className={`flex items-center justify-center p-2 transition-all duration-500 ease-in-out ${link.hoverColor} ${link.hoverBgColor} hover:rounded-lg`}
         >
-          <link.icon className="text-2xl sm:text-3xl md:text-5xl lg:text-4xl" />
+          <link.icon className="text-2xl sm:text-3xl md:text-5xl lg:text-3xl hover:scale-110 transition-transform duration-400 ease-in-out" />
         </a>
       ))}
     </div>

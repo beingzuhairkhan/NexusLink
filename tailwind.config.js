@@ -7,8 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'edu-vic': ['"Edu VIC WA NT Beginner"', 'sans-serif'],
-        'dancing-script': ['"Dancing Script"', 'cursive'],
+        'custom-cursive': ['Dancing Script', 'cursive'],
       },
       
     },
